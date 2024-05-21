@@ -1,19 +1,20 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { HomeComponent } from "./components/home.component";
-import { RouterModule, Routes } from "@angular/router";
 import { NavbarModule } from "../shared/components/navbar/navbar.module";
+import { HomePageComponent } from "./pages/home-page/home-page.component";
+import { HomeRoutingModule } from "./home-routing.module";
 
-const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  }
-]
+
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes), NavbarModule],
-  declarations: [HomeComponent]
+  imports: [
+      CommonModule,
+      NavbarModule,
+      HomeRoutingModule,
+    ],
+  declarations: [
+    HomePageComponent
+  ]
 })
 
 export class HomeModule {
