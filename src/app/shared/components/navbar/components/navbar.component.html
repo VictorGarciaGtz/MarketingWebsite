@@ -1,3 +1,17 @@
-<header>
-  navbar
+<header class="app-header">
+  <div class="brand">
+   <h1>Angularity</h1>
+  </div>
+
+  <nav>
+    <li class="burguer-menu" (click)="openMenu()">
+      <i class="las la-bars" #menuIcon></i>
+    </li>
+    <ul class="link-container">
+      <li class="nav-link"><a href="#">Demos</a></li>
+      <li class="nav-link"><a href="#">Support</a></li>
+      <li class="nav-link"><a href="#">Contact Us</a></li>
+      <li class="nav-link cta-link"><a href="#">Get Started Now</a></li>
+    </ul>
+  </nav>
 </header>
