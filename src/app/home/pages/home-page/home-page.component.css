@@ -1,3 +1,50 @@
-:host {
-  display: block;
+.content-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #161C2D;
+  height: 70vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 3rem;
+}
+
+.hero-text {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero-cta {
+  text-decoration: none;
+  color: #68D585;
+  font-weight: 700;
+}
+
+.hero-cta > i {
+  color: inherit;
+  margin-left: 8px;
+}
+
+.hero-img {
+  width: 45%;
+  border-radius: 15px;
+}
+
+@media(min-width: 720px) {
+
 }

@@ -1,0 +1,79 @@
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.brand > h1 {
+  font-family: "Montserrat";
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+ li {
+  list-style: none;
+  margin: 0px 20px;
+}
+
+  li:hover {
+    color: #a9a9a9;
+}
+
+.link-container > li > a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.cta-link {
+  background-color: #473BF0;
+  padding: 13px 25px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 0px;
+}
+
+.cta-link:hover {
+  color: #fff;
+  box-shadow: 10px 10px 10px #111;
+  cursor: pointer;
+}
+
+.burguer-menu {
+  font-size: 2.8em;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 720px){
+  .link-container > li:not(.burguer-menu) {
+    display: block;
+  }
+
+  li.burguer-menu {
+    display: none;
+  }
+
+  .link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+  }
+
+}
